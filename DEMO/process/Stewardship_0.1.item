@@ -120,7 +120,7 @@
       <elementValue elementRef="SCHEMA_COLUMN" value="PartyGender"/>
       <elementValue elementRef="ARRAY" value="&quot;M&quot;,&quot;F&quot; "/>
       <elementValue elementRef="SCHEMA_COLUMN" value="PartyIdentificationNo"/>
-      <elementValue elementRef="ARRAY" value="Numeric.random(999999999 ,9999999999999999 )"/>
+      <elementValue elementRef="ARRAY" value="&quot;123456789&quot;,&quot;12345678912345&quot;,&quot;1234567&quot;,&quot;123456789222222222222222222222222&quot;,&quot;123456789123456&quot;,&quot;123456789&quot; "/>
     </elementParameter>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
@@ -140,8 +140,8 @@
       <column comment="" key="false" length="-1" name="PartyGender" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true">
         <additionalField key="FUNCTION_INFO" value="{&quot;NAME&quot;:&quot;...&quot;,&quot;PARAMETERS&quot;:[{&quot;PARAMETER_NAME&quot;:&quot;customize parameter&quot;,&quot;PARAMETER_VALUE&quot;:&quot;\&quot;M\&quot;,\&quot;F\&quot; &quot;}],&quot;PARAMETER_CLASS_NAME&quot;:&quot;&quot;}"/>
       </column>
-      <column comment="" key="false" length="-1" name="PartyIdentificationNo" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true">
-        <additionalField key="FUNCTION_INFO" value="{&quot;NAME&quot;:&quot;random&quot;,&quot;PARAMETERS&quot;:[{&quot;PARAMETER_NAME&quot;:&quot;min value&quot;,&quot;PARAMETER_VALUE&quot;:&quot;999999999 &quot;},{&quot;PARAMETER_NAME&quot;:&quot;max value&quot;,&quot;PARAMETER_VALUE&quot;:&quot;9999999999999999 &quot;}],&quot;PARAMETER_CLASS_NAME&quot;:&quot;Numeric&quot;}"/>
+      <column comment="" key="false" length="-1" name="PartyIdentificationNo" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true">
+        <additionalField key="FUNCTION_INFO" value="{&quot;NAME&quot;:&quot;...&quot;,&quot;PARAMETERS&quot;:[{&quot;PARAMETER_NAME&quot;:&quot;customize parameter&quot;,&quot;PARAMETER_VALUE&quot;:&quot;\&quot;123456789\&quot;,\&quot;12345678912345\&quot;,\&quot;1234567\&quot;,\&quot;123456789222222222222222222222222\&quot;,\&quot;123456789123456\&quot;,\&quot;123456789\&quot; &quot;}],&quot;PARAMETER_CLASS_NAME&quot;:&quot;&quot;}"/>
       </column>
     </metadata>
   </node>
@@ -199,7 +199,7 @@
         <mapperTableEntries name="PartyLastName" type="id_String" nullable="true"/>
         <mapperTableEntries name="PartyTitle" type="id_String" nullable="true"/>
         <mapperTableEntries name="PartyGender" type="id_String" nullable="true"/>
-        <mapperTableEntries name="PartyIdentificationNo" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="PartyIdentificationNo" type="id_String" nullable="true"/>
       </inputTables>
     </nodeData>
   </node>
