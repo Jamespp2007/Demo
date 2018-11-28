@@ -189,7 +189,7 @@
         <mapperTableEntries name="Partyid" expression="row1.Partyid " type="id_Integer" nullable="true"/>
         <mapperTableEntries name="PartyFirstName" expression="row1.PartyFirstName " type="id_String" nullable="true"/>
         <mapperTableEntries name="PartyLastName" expression="row1.PartyLastName " type="id_String" nullable="true"/>
-        <mapperTableEntries name="PartyState" expression="row1.PartyTitle " type="id_String" nullable="true"/>
+        <mapperTableEntries name="PartyState" expression="row1.PartyState " type="id_String" nullable="true"/>
         <mapperTableEntries name="PartyGender" expression="row1.PartyGender " type="id_String" nullable="true"/>
         <mapperTableEntries name="PartyIdentificationNo" expression="row1.PartyIdentificationNo " type="id_String" nullable="true"/>
       </outputTables>
