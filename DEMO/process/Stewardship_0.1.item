@@ -173,8 +173,6 @@
       <column comment="text" key="false" length="-1" name="PartyState" nullable="true" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="text" key="false" length="-1" name="PartyGender" nullable="true" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="text" key="false" length="-1" name="PartyIdentificationNo" nullable="true" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="TDS_DUE_DATE" nullable="true" pattern="" precision="-1" type="id_Long" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="TDS_EXTERNAL_ID" nullable="true" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties shellMaximized="true"/>
@@ -188,14 +186,12 @@
         <mapperTableEntries name="PartyIdentificationNo" expression="row1.PartyIdentificationNo" type="id_String" nullable="true"/>
       </outputTables>
       <outputTables sizeState="INTERMEDIATE" name="out2" activateCondensedTool="true" reject="true">
-        <mapperTableEntries name="PartyId" expression="row1.Partyid" type="id_String" nullable="true"/>
+        <mapperTableEntries name="PartyId" expression="row1.Partyid.toString()" type="id_String" nullable="true"/>
         <mapperTableEntries name="PartyFirstName" expression="row1.PartyFirstName" type="id_String" nullable="true"/>
         <mapperTableEntries name="PartyLastName" expression="row1.PartyLastName" type="id_String" nullable="true"/>
         <mapperTableEntries name="PartyState" expression="row1.PartyState" type="id_String" nullable="true"/>
         <mapperTableEntries name="PartyGender" expression="row1.PartyGender" type="id_String" nullable="true"/>
         <mapperTableEntries name="PartyIdentificationNo" expression="row1.PartyIdentificationNo" type="id_String" nullable="true"/>
-        <mapperTableEntries name="TDS_DUE_DATE" type="id_Long" nullable="true"/>
-        <mapperTableEntries name="TDS_EXTERNAL_ID" type="id_String" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row1" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="Partyid" type="id_Integer" nullable="true"/>
