@@ -177,7 +177,7 @@
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
-      <outputTables sizeState="INTERMEDIATE" name="out1" expressionFilter="row1.PartyIdentificationNo.length() >=10 &amp;&amp; &#xD;&#xA;row1.PartyIdentificationNo.length() &lt;=13" activateExpressionFilter="true">
+      <outputTables sizeState="INTERMEDIATE" name="out1" expressionFilter="row1.PartyIdentificationNo.length() >=10 &amp;&amp; &#xD;&#xA;row1.PartyIdentificationNo.length() &lt;=16" activateExpressionFilter="true">
         <mapperTableEntries name="Partyid" expression="row1.Partyid" type="id_Integer" nullable="true"/>
         <mapperTableEntries name="PartyFirstName" expression="row1.PartyFirstName" type="id_String" nullable="true"/>
         <mapperTableEntries name="PartyLastName" expression="row1.PartyLastName" type="id_String" nullable="true"/>
